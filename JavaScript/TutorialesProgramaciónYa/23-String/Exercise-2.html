@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 2 Chapter 23</title>
+</head>
+<body>
+    <script>
+
+        //Igual al anterior, pero que termine la aplicación sin contemplar mayúsculas ni minúsculas. Es decir que para salir se pueda teclear fin, Fin o FIN. 
+
+        let nombre;
+        let cant = 0;
+        do {
+            nombre = prompt('Ingrese un nombre (Terminar ingresando Fin):');
+            cant++;
+            nombre = nombre.toUpperCase();
+        } while (nombre != 'FIN');
+        //para descontar la palabra Fin
+        cant--;
+        document.write('Se ingresaron ' + cant + ' palabras');
+    </script>
+</body>
+</html>

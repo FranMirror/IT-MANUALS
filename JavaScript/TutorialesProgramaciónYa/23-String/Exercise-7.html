@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 2 Chapter 23</title>
+</head>
+<body>
+    
+    <script>
+
+        //Codifique un programa que permita cargar una oración por teclado, luego mostrar cada palabra ingresada en una línea distinta.
+
+        //Por ejemplo si cargo:
+        //	La mañana está fría.
+        //Debe aparecer:
+        //La
+        //mañana
+        //está
+        //fría.
+
+        let frase = prompt('Ingrese una frase:');
+        for (let f = 0; f < frase.length; f++) {
+            if (frase.charAt(f) == ' ') {
+                document.write('<br>');
+            } else {
+                document.write(frase.charAt(f));
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

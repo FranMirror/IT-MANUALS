@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 11</title>
+</head>
+<body>
+    <script>
+
+        //Ingresar una palabra o texto por teclado y determinar si es o no una palabra palíndromo. 
+        //Palabra que se lee de igual manera de adelante hacia atrás, que de atrás hacia delante) 
+    
+        let texto = prompt('Ingrese una palabra o frase:');
+        let cant = 0;
+        for (let f = 0; f < texto.length; f++) {
+            if (texto.charAt(f) == texto.charAt(texto.length - 1 - f)) {
+                cant++;
+            }
+        }
+        if (cant == texto.length) {
+            document.write(texto + ' se lee igual en ambas direcciones');
+        } else {
+            document.write(texto + ' no se lee igual en ambas direcciones');
+        }
+        
+    </script>
+    
+</body>
+</html>
